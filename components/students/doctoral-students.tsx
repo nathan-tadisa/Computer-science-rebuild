@@ -7,47 +7,56 @@ const doctoralStudents = [
   {
     name: "Adekunle Adekoya",
     supervisor: "Andries Engelbrecht",
-    topic: "Multi-Objective Optimization for Dynamic Incremental Machine Learning Algorithms"
+    topic: "Multi-Objective Optimization for Dynamic Incremental Machine Learning Algorithms",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Winston Anderson",
     supervisor: "Lynette van Zijl",
-    topic: "The Role of Multilingual Semantic and Semantic Web Technologies in Automated Assessment"
+    topic: "The Role of Multilingual Semantic and Semantic Web Technologies in Automated Assessment",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Willem Bester",
     supervisor: "Brink van der Merwe",
-    topic: "The pathology, amelioration and cure of catastrophic backtracking in extended regular expressions"
+    topic: "The pathology, amelioration and cure of catastrophic backtracking in extended regular expressions",
+    image: "/images/students/whkbester.jpg"
   },
   {
     name: "Dave Bockus",
     supervisor: "Andries Engelbrecht",
-    topic: "High Dimensional Fitness Landscape Analysis"
+    topic: "High Dimensional Fitness Landscape Analysis",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Dirko Coetsee",
     supervisor: "McElory Hoffmann, Steve Kroon",
-    topic: "Automated spreadsheet integration"
+    topic: "Automated spreadsheet integration",
+    image: "/images/students/dcoetsee.jpg"
   },
   {
     name: "Jordan Masakuna",
     supervisor: "Dr Simukai Utete, Steve Kroon",
-    topic: "Robot games with randomisation"
+    topic: "Robot games with randomisation",
+    image: "/images/students/masakuna.jpg"
   },
   {
     name: "Taivvo Omomule",
     supervisor: "Andries Engelbrecht",
-    topic: "Mixtures of Heterogeneous Experts"
+    topic: "Mixtures of Heterogeneous Experts",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Moeketsi Raselimo",
     supervisor: "Bernd Fischer",
-    topic: "Fault Localization and Repair for Grammarware"
+    topic: "Fault Localization and Repair for Grammarware",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Amani Saad",
     supervisor: "Andries Engelbrecht",
-    topic: "Differential Evolution and optimal Population Sizes"
+    topic: "Differential Evolution and optimal Population Sizes",
+    image: "/placeholder-user.jpg"
   }
 ]
 
@@ -68,22 +77,22 @@ export default function DoctoralStudents() {
   return (
     <section className="bg-[#F5F5F5] py-20 relative overflow-hidden">
       {/* S-graphic background pattern */}
-      <div className="absolute bottom-0 right-0 h-full opacity-10 pointer-events-none">
+      <div className="absolute bottom-0 right-0 h-full w-auto max-w-[40%] opacity-10 pointer-events-none">
         <img 
           src="/images/s-graphic/S_Graphic_Grid_A4_RGB-04.svg" 
           alt="" 
-          className="h-full w-auto object-cover"
+          className="h-full w-auto object-cover object-right"
         />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
             Doctoral students
           </h2>
-          <p className="text-lg text-[#4D5356] font-medium max-w-3xl mx-auto mb-8">
+          <p className="text-base sm:text-lg text-[#4D5356] font-medium max-w-3xl mx-auto mb-8">
             Our PhD candidates are conducting original research that advances the frontiers of computer science.
           </p>
           

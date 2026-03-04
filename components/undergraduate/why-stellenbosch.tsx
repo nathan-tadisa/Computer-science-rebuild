@@ -27,17 +27,17 @@ export default function WhyStellenbosch() {
   return (
     <section className="bg-white py-20 relative overflow-hidden">
       {/* S-graphic background pattern */}
-      <div className="absolute top-0 right-0 h-full opacity-10 pointer-events-none">
+      <div className="absolute top-0 right-0 h-full w-auto max-w-[40%] opacity-10 pointer-events-none">
         <img 
           src="/images/s-graphic/S_Graphic_Grid_A4_RGB-04.svg" 
           alt="" 
-          className="h-full object-cover"
+          className="h-full w-auto object-cover object-right"
         />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
-        <div className="grid grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left content */}
           <div className="col-span-12 lg:col-span-6">
@@ -48,24 +48,24 @@ export default function WhyStellenbosch() {
               </span>
             </div>
             
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
               Why Stellenbosch?
             </h2>
             
-            <p className="text-lg text-[#4D5356] font-medium leading-relaxed mb-8">
+            <p className="text-base sm:text-lg text-[#4D5356] font-medium leading-relaxed mb-8">
               At Stellenbosch, you're not just a student number. You're part of a vibrant community that supports your growth, celebrates your achievements, and prepares you for a successful career in technology.
             </p>
             
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {highlights.map((highlight) => {
                 const Icon = highlight.icon
                 return (
-                  <div key={highlight.title} className="flex gap-4">
+                  <div key={highlight.title} className="flex gap-3 sm:gap-4">
                     <div className="w-12 h-12 bg-[#D22730] flex items-center justify-center flex-shrink-0">
                       <Icon size={20} className="text-white" />
                     </div>
-                    <div>
-                      <h3 className="font-bold text-[#2D2D2D] mb-1">
+                    <div className="min-w-0 flex-1">
+                      <h3 className="font-bold text-[#2D2D2D] mb-1 text-sm sm:text-base">
                         {highlight.title}
                       </h3>
                       <p className="text-sm text-[#4D5356] font-medium leading-relaxed">
@@ -80,36 +80,36 @@ export default function WhyStellenbosch() {
           
           {/* Right image */}
           <div className="col-span-12 lg:col-span-6">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="space-y-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
+              <div className="space-y-3 sm:space-y-4">
                 <div className="aspect-square overflow-hidden">
                   <img
-                    src="/placeholder.jpg"
-                    alt="Students collaborating"
+                    src="/images/ScienceClassMaths-13.jpg"
+                    alt="Students in mathematics class"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
-                    src="/placeholder.jpg"
-                    alt="Computer lab"
+                    src="/images/EngineeringElectricalLab-11.jpg"
+                    alt="Electrical engineering laboratory"
                     className="w-full h-full object-cover"
                   />
                 </div>
               </div>
               
-              <div className="space-y-4 pt-12">
+              <div className="space-y-3 sm:space-y-4 pt-8 sm:pt-12">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
-                    src="/placeholder.jpg"
-                    alt="Mentorship session"
+                    src="/images/EngineeringElectricalLab-24.jpg"
+                    alt="Students working in electrical lab"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="aspect-square overflow-hidden">
                   <img
-                    src="/placeholder.jpg"
-                    alt="Hackathon event"
+                    src="/images/ScienceClassMaths-28.jpg"
+                    alt="Interactive learning session"
                     className="w-full h-full object-cover"
                   />
                 </div>

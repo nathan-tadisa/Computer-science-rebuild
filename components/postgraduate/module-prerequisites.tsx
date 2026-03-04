@@ -28,15 +28,15 @@ export default function ModulePrerequisites() {
   return (
     <section className="bg-white py-20 relative overflow-hidden">
       {/* S-graphic background pattern */}
-      <div className="absolute bottom-0 right-0 h-full opacity-10 pointer-events-none">
+      <div className="absolute bottom-0 right-0 h-full w-auto max-w-[40%] opacity-10 pointer-events-none">
         <img 
           src="/images/s-graphic/S_Graphic_Grid_A4_RGB-06.svg" 
           alt="" 
-          className="h-full object-cover"
+          className="h-full w-auto object-cover object-right"
         />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
         <div className="mb-12">
@@ -46,20 +46,21 @@ export default function ModulePrerequisites() {
               Module information
             </span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
             Individual module prerequisites
           </h2>
-          <p className="text-lg text-[#4D5356] font-medium max-w-3xl leading-relaxed">
+          <p className="text-base sm:text-lg text-[#4D5356] font-medium max-w-3xl leading-relaxed">
             If you're interested in registering for individual modules, ensure you meet the specific prerequisites for each module.
           </p>
         </div>
         
-        <div className="grid grid-cols-12 gap-8">
+        <div className="grid grid-cols-12 gap-6 lg:gap-8">
           
           {/* Prerequisites Table */}
           <div className="col-span-12 lg:col-span-8">
             <div className="bg-[#F5F5F5] overflow-hidden">
-              <table className="w-full">
+              <div className="overflow-x-auto">
+                <table className="w-full">
                 <thead>
                   <tr className="bg-[#61223B] text-white">
                     <th className="text-left px-6 py-4 text-sm font-bold uppercase tracking-wider">
@@ -99,6 +100,7 @@ export default function ModulePrerequisites() {
                   ))}
                 </tbody>
               </table>
+              </div>
             </div>
           </div>
           

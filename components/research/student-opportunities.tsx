@@ -5,15 +5,15 @@ export default function StudentOpportunities() {
   return (
     <section className="bg-white py-20 relative overflow-hidden">
       {/* S-graphic background pattern */}
-      <div className="absolute top-0 left-0 h-full opacity-10 pointer-events-none">
+      <div className="absolute top-0 left-0 h-full w-auto max-w-[40%] opacity-10 pointer-events-none">
         <img 
           src="/images/s-graphic/S_Graphic_Grid_A4_RGB-06.svg" 
           alt="" 
-          className="h-full w-auto object-cover"
+          className="h-full w-auto object-cover object-left"
         />
       </div>
       
-      <div className="max-w-5xl mx-auto px-6 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
         <div className="text-center mb-12">
@@ -24,10 +24,10 @@ export default function StudentOpportunities() {
             </span>
             <div className="w-12 h-0.5 bg-[#D22730]" />
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
             Get involved in our research
           </h2>
-          <p className="text-lg text-[#4D5356] font-medium max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-[#4D5356] font-medium max-w-3xl mx-auto">
             We invite prospective Master's and Doctoral students to explore supervision opportunities with our research groups. Undergraduates can also participate in hackathons and vacation research projects to gain hands-on experience.
           </p>
         </div>

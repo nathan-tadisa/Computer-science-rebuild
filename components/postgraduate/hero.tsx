@@ -14,7 +14,7 @@ export default function PostgraduateHero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/su-campus.jpg"
+          src="/images/ScienceClassMaths-13.jpg"
           alt="Postgraduate research"
           className="w-full h-full object-cover"
         />

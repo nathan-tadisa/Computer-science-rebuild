@@ -7,142 +7,170 @@ const mastersStudents = [
   {
     name: "Albertus Aribeb",
     supervisor: "Andries Engelbrecht",
-    topic: "Time Series Data Clustering"
+    topic: "Time Series Data Clustering",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "David Baker Effendi",
     supervisor: "Brink van der Merwe, Willem Visser",
-    topic: "Applications of Graph Technology in Spatio-Temporal Data Modelling, Program Analysis and Natural Language Processing"
+    topic: "Applications of Graph Technology in Spatio-Temporal Data Modelling, Program Analysis and Natural Language Processing",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Chelsea Barraball",
     supervisor: "Andries Engelbrecht",
-    topic: "Co-Evolutionary Particle Swarm Optimization in Dynamic Environments"
+    topic: "Co-Evolutionary Particle Swarm Optimization in Dynamic Environments",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Burger Becker",
     supervisor: "Trienko Grobler",
-    topic: "Classification of Radio Galaxies"
+    topic: "Classification of Radio Galaxies",
+    image: "/images/students/bbecker.jpg"
   },
   {
     name: "Neil Burger",
     supervisor: "Trienko Grobler, Waldo Kleynhans",
-    topic: "Trajectory Mining and Prediction Algorithms for Vessels using AIS Data"
+    topic: "Trajectory Mining and Prediction Algorithms for Vessels using AIS Data",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Rohan Chhipa",
     supervisor: "Andries Engelbrecht",
-    topic: "Community Detection in Social Networks using Set-based Particle Swarm"
+    topic: "Community Detection in Social Networks using Set-based Particle Swarm",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Heinrich Cilliers",
     supervisor: "Andries Engelbrecht",
-    topic: "Adaptive Gaussian Mixture Models"
+    topic: "Adaptive Gaussian Mixture Models",
+    image: "/images/students/hcilliers.jpg"
   },
   {
     name: "Chris Coetzee",
     supervisor: "Willem Bester, Bernd Fischer",
-    topic: "Application of static binary instrumentation to recovering data structures and their types"
+    topic: "Application of static binary instrumentation to recovering data structures and their types",
+    image: "/images/students/ccoetzee.jpg"
   },
   {
     name: "Andrew Collett",
     supervisor: "Brink van der Merwe, Willem Visser",
-    topic: "Software Stack Architectures and their Performance"
+    topic: "Software Stack Architectures and their Performance",
+    image: "/images/students/ajcollett.jpg"
   },
   {
     name: "Jordan Daubinet",
     supervisor: "Andries Engelbrecht",
-    topic: "Multi-Agent Reinforcement Learning for Financial Trading"
+    topic: "Multi-Agent Reinforcement Learning for Financial Trading",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Nicole Du Toit",
     supervisor: "Cornelia Inggs",
-    topic: "Linearization Checking of Concurrent Non-blocking Data Structures"
+    topic: "Linearization Checking of Concurrent Non-blocking Data Structures",
+    image: "/images/students/ndutoit.jpg"
   },
   {
     name: "Kyle Erwin",
     supervisor: "Andries Engelbrecht",
-    topic: "Set-base PSO for Portfolio Optimization"
+    topic: "Set-base PSO for Portfolio Optimization",
+    image: "/images/students/kerwin.jpg"
   },
   {
     name: "Ignazio Ferreira",
     supervisor: "Andries Engelbrecht",
-    topic: "Neural Network Ensembles and Concept Drift"
+    topic: "Neural Network Ensembles and Concept Drift",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Manfred Habeck",
     supervisor: "Trienko Grobler, Lynette van Zijl / Jaco Geldenhuys",
-    topic: "Box-repetition Free Words"
+    topic: "Box-repetition Free Words",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Jason Jackson",
     supervisor: "Trienko Grobler, Danie Ludick",
-    topic: "Interferometry Imaging and Calibration Artefacts"
+    topic: "Interferometry Imaging and Calibration Artefacts",
+    image: "/images/students/jjackson.jpg"
   },
   {
     name: "Ryan Lang",
     supervisor: "Andries Engelbrecht",
-    topic: "Landscape-aware Hyper-heuristics"
+    topic: "Landscape-aware Hyper-heuristics",
+    image: "/images/students/rlang.jpg"
   },
   {
     name: "Fidelis Mnkandla",
     supervisor: "Andries Engelbrecht",
-    topic: "Training support vector machines under the presence of concept drift using particle swarm optimization"
+    topic: "Training support vector machines under the presence of concept drift using particle swarm optimization",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Zhunaid Mohamed",
     supervisor: "Willem Visser",
-    topic: "Interpreting and explaining Rural Networks"
+    topic: "Interpreting and explaining Rural Networks",
+    image: "/images/students/zmohamed.jpg"
   },
   {
     name: "Werner Mostert",
     supervisor: "Andries Engelbrecht",
-    topic: "Feature Selection Fitness Landscape Analysis"
+    topic: "Feature Selection Fitness Landscape Analysis",
+    image: "/images/students/wmostert.jpg"
   },
   {
     name: "Muhammed Rahman",
     supervisor: "Andries Engelbrecht",
-    topic: "Genetic Programming to Induce Decision Trees in Dynamic Environments"
+    topic: "Genetic Programming to Induce Decision Trees in Dynamic Environments",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Cian Steenkamp",
     supervisor: "Andries Engelbrecht",
-    topic: "Multi-Guide Particle Swarm Optimization for Many-Objective Optimization Problems"
+    topic: "Multi-Guide Particle Swarm Optimization for Many-Objective Optimization Problems",
+    image: "/images/students/csteenkamp.jpg"
   },
   {
     name: "Charl Steyl",
     supervisor: "McElory Hoffmann, Trienko Grobler",
-    topic: "Deep Learning Framework to Predictive Maintenance"
+    topic: "Deep Learning Framework to Predictive Maintenance",
+    image: "/images/students/csteyl.jpg"
   },
   {
     name: "Benjamin Strelitz",
     supervisor: "Andries Engelbrecht",
-    topic: "Constrained multi-modal optimization using particle swarm optimization"
+    topic: "Constrained multi-modal optimization using particle swarm optimization",
+    image: "/placeholder-user.jpg"
   },
   {
     name: "Stefan Strydom",
     supervisor: "Brink van der Merwe",
-    topic: "Automatic assignment of diagnosis codes to free-form text medical notes"
+    topic: "Automatic assignment of diagnosis codes to free-form text medical notes",
+    image: "/images/students/sstrydom.jpg"
   },
   {
     name: "Aksel Thele",
     supervisor: "Andries Engelbrecht",
-    topic: "Honey Bee Optimization for Dynamic Environments"
+    topic: "Honey Bee Optimization for Dynamic Environments",
+    image: "/images/students/athele.jpg"
   },
   {
     name: "Elan van Biljon",
     supervisor: "Steve Kroon",
-    topic: "Initialisation of Noise-Regularised Neural Networks"
+    topic: "Initialisation of Noise-Regularised Neural Networks",
+    image: "/images/students/evanbiljon.jpg"
   },
   {
     name: "Phillip van Heerden",
     supervisor: "Willem Visser, Bernd Fischer",
-    topic: "Automatic Input Language Learning with Symbolic Methods"
+    topic: "Automatic Input Language Learning with Symbolic Methods",
+    image: "/images/students/pvanheerden.jpg"
   },
   {
     name: "Steyn van Litsenborgh",
     supervisor: "Brink van der Merwe",
-    topic: "Learning Practical Regular Expressions"
+    topic: "Learning Practical Regular Expressions",
+    image: "/images/students/svanlitsenborgh.jpg"
   }
 ]
 
@@ -163,22 +191,22 @@ export default function MastersStudents() {
   return (
     <section className="bg-white py-20 relative overflow-hidden">
       {/* S-graphic background pattern */}
-      <div className="absolute top-0 left-0 h-full opacity-10 pointer-events-none">
+      <div className="absolute top-0 left-0 h-full w-auto max-w-[40%] opacity-10 pointer-events-none">
         <img 
           src="/images/s-graphic/S_Graphic_Grid_A4_RGB-06.svg" 
           alt="" 
-          className="h-full w-auto object-cover"
+          className="h-full w-auto object-cover object-left"
         />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
             Master's students
           </h2>
-          <p className="text-lg text-[#4D5356] font-medium max-w-3xl mx-auto mb-8">
+          <p className="text-base sm:text-lg text-[#4D5356] font-medium max-w-3xl mx-auto mb-8">
             Our Master's candidates are developing expertise through focused research projects across diverse areas of computer science.
           </p>
           

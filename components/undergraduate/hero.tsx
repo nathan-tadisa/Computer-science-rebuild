@@ -14,7 +14,7 @@ export default function UndergraduateHero() {
       {/* Full background image */}
       <div className="absolute inset-0">
         <img
-          src="/images/su-campus-day.jpg"
+          src="/images/building 1.jpg"
           alt="Students studying computer science"
           className="w-full h-full object-cover"
         />

@@ -4,15 +4,15 @@ export default function ContactCards() {
   return (
     <section className="bg-[#F5F5F5] py-20 relative overflow-hidden">
       {/* S-graphic background pattern */}
-      <div className="absolute bottom-0 left-0 h-full opacity-10 pointer-events-none">
+      <div className="absolute bottom-0 left-0 h-full w-auto max-w-[40%] opacity-10 pointer-events-none">
         <img 
           src="/images/s-graphic/S_Graphic_Grid_A4_RGB-03.svg" 
           alt="" 
-          className="h-full w-auto object-cover"
+          className="h-full w-auto object-cover object-left"
         />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           

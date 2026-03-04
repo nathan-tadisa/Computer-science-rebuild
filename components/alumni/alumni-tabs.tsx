@@ -11,15 +11,15 @@ export default function AlumniTabs() {
   return (
     <section className="bg-white py-20 relative overflow-hidden">
       {/* S-graphic background pattern */}
-      <div className="absolute top-0 right-0 h-full opacity-10 pointer-events-none">
+      <div className="absolute top-0 right-0 h-full w-auto max-w-[40%] opacity-10 pointer-events-none">
         <img 
           src="/images/s-graphic/S_Graphic_Grid_A4_RGB-03.svg" 
           alt="" 
-          className="h-full w-auto object-cover"
+          className="h-full w-auto object-cover object-right"
         />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Tab Navigation */}
         <div className="flex flex-wrap justify-center gap-2 mb-12 border-b-2 border-[#E5E5E5]">

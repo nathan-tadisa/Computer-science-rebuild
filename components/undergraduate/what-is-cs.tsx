@@ -1,6 +1,7 @@
 "use client"
 
 import { Brain, Cpu, Lightbulb } from "lucide-react"
+import AnimatedVideoCard from "../ui/animated-video-card"
 
 const areas = [
   {
@@ -30,18 +31,18 @@ export default function WhatIsCS() {
   return (
     <section id="what-is-cs" className="bg-white py-20 relative overflow-hidden">
       {/* S-graphic background pattern */}
-      <div className="absolute top-0 right-0 h-full opacity-10 pointer-events-none">
+      <div className="absolute top-0 right-0 h-full w-auto max-w-[40%] opacity-10 pointer-events-none">
         <img 
           src="/images/s-graphic/S_Graphic_Grid_A4_RGB-02.svg" 
           alt="" 
-          className="h-full object-cover"
+          className="h-full w-auto object-cover object-right"
         />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 sm:mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="w-12 h-0.5 bg-[#D22730]" />
             <span className="text-xs font-bold tracking-widest uppercase text-[#61223B]">
@@ -49,25 +50,25 @@ export default function WhatIsCS() {
             </span>
             <div className="w-12 h-0.5 bg-[#D22730]" />
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
             What is Computer Science?
           </h2>
-          <p className="text-lg text-[#4D5356] font-medium max-w-4xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg text-[#4D5356] font-medium max-w-4xl mx-auto leading-relaxed px-4">
             Computer science is the study of exactly what computers can do. While it ultimately boils down to flipping zeroes and ones, it is the foundation for running the internet, generating lifelike graphics, and even simulating the universe. The discipline is broadly divided into three main areas:
           </p>
         </div>
         
-        <div className="grid grid-cols-12 gap-12 mb-16">
+        <div className="grid grid-cols-12 gap-8 lg:gap-12 mb-12 sm:mb-16">
           
           {/* Three Areas */}
           <div className="col-span-12 lg:col-span-7">
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {areas.map((area) => {
                 const Icon = area.icon
                 return (
                   <div
                     key={area.title}
-                    className="flex gap-4 p-6 bg-[#F5F5F5] hover:bg-white hover:shadow-lg transition-all border-l-4"
+                    className="flex flex-col sm:flex-row gap-4 p-4 sm:p-6 bg-[#F5F5F5] hover:bg-white hover:shadow-lg transition-all border-l-4"
                     style={{ borderColor: area.color }}
                   >
                     <div 
@@ -77,9 +78,9 @@ export default function WhatIsCS() {
                       <Icon size={24} className="text-white" />
                     </div>
                     
-                    <div className="flex-1">
-                      <div className="flex items-center gap-3 mb-2">
-                        <h3 className="text-lg font-bold text-[#2D2D2D]">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-2">
+                        <h3 className="text-base sm:text-lg font-bold text-[#2D2D2D]">
                           {area.title}
                         </h3>
                         <span className="text-xs font-bold text-[#D22730] bg-white px-2 py-1">
@@ -98,21 +99,16 @@ export default function WhatIsCS() {
           
           {/* Video Preview */}
           <div className="col-span-12 lg:col-span-5">
-            <div className="bg-[#2D2D2D] p-6 sticky top-24">
-              <div className="aspect-video bg-black mb-4 relative overflow-hidden">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/SzJ46YA_RaA"
-                  title="The Map of Computer Science"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute inset-0"
+            <div className="bg-[#2D2D2D] p-4 sm:p-6 lg:sticky lg:top-24">
+              {/* Animated Video Card */}
+              <div className="mb-4 flex items-center justify-center">
+                <AnimatedVideoCard
+                  videoId="SzJ46YA_RaA"
+                  thumbnailUrl="https://img.youtube.com/vi/SzJ46YA_RaA/maxresdefault.jpg"
                 />
               </div>
               
-              <h3 className="text-lg font-bold text-white mb-3">
+              <h3 className="text-base sm:text-lg font-bold text-white mb-3">
                 Watch: The Map of Computer Science
               </h3>
               

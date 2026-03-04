@@ -1,7 +1,105 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
+@import '../styles/animations.css';
 
 @custom-variant dark (&:is(.dark *));
+
+/* SU Raleway Font Family */
+@font-face {
+  font-family: 'SU Raleway';
+  src: url('/SU_Raleway_Font/SU-raleway-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SU Raleway';
+  src: url('/SU_Raleway_Font/SU-raleway-italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SU Raleway';
+  src: url('/SU_Raleway_Font/SU-raleway-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SU Raleway';
+  src: url('/SU_Raleway_Font/SU-raleway-mediumitalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SU Raleway';
+  src: url('/SU_Raleway_Font/SU-raleway-semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SU Raleway';
+  src: url('/SU_Raleway_Font/SU-raleway-semibolditalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SU Raleway';
+  src: url('/SU_Raleway_Font/SU-raleway-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SU Raleway';
+  src: url('/SU_Raleway_Font/SU-raleway-bolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SU Raleway';
+  src: url('/SU_Raleway_Font/SU-raleway-extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SU Raleway';
+  src: url('/SU_Raleway_Font/SU-raleway-extrabolditalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SU Raleway';
+  src: url('/SU_Raleway_Font/SU-raleway-black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SU Raleway';
+  src: url('/SU_Raleway_Font/SU-raleway-blackitalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
 
 /*
   Stellenbosch University — Official Brand Colours (v3, Sept 2025)
@@ -83,7 +181,7 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-raleway), 'Raleway', 'Trebuchet MS', 'Trebuchet', sans-serif;
+  --font-sans: 'SU Raleway', 'Raleway', 'Trebuchet MS', 'Trebuchet', sans-serif;
   --font-mono: var(--font-jetbrains), 'JetBrains Mono', monospace;
 
   --color-background: var(--background);
@@ -135,6 +233,14 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  /* Prevent horizontal scroll on all sections */
+  section {
+    overflow-x: hidden;
   }
 }
 

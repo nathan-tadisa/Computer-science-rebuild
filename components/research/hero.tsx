@@ -13,7 +13,7 @@ export default function ResearchHero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/su-campus-day.jpg"
+          src="/images/building 1.jpg"
           alt="Research at Stellenbosch"
           className="w-full h-full object-cover"
         />

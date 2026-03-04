@@ -14,7 +14,7 @@ export default function UndergraduateModulesHero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/su-campus-day.jpg"
+          src="/images/ScienceClassMaths-13.jpg"
           alt="Undergraduate studies"
           className="w-full h-full object-cover"
         />

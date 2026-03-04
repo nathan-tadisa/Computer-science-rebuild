@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { X, BookOpen } from "lucide-react"
 
 const year1Modules = [
@@ -107,11 +107,25 @@ type Module = typeof year1Modules[0]
 export default function UndergraduateModuleCatalog() {
   const [selectedModule, setSelectedModule] = useState<Module | null>(null)
   const [activeTab, setActiveTab] = useState<"year1" | "year2" | "year3">("year1")
+  const [clickPosition, setClickPosition] = useState({ x: 0, y: 0 })
+  const cardRefs = useRef<{ [key: string]: HTMLButtonElement | null }>({})
 
   const currentModules = 
     activeTab === "year1" ? year1Modules :
     activeTab === "year2" ? year2Modules :
     year3Modules
+
+  const handleModuleClick = (module: Module, code: string) => {
+    const cardElement = cardRefs.current[code]
+    if (cardElement) {
+      const rect = cardElement.getBoundingClientRect()
+      setClickPosition({
+        x: rect.left + rect.width / 2,
+        y: rect.top + rect.height / 2
+      })
+    }
+    setSelectedModule(module)
+  }
 
   return (
     <section id="module-catalog" className="bg-white py-20 relative overflow-hidden">
@@ -185,7 +199,8 @@ export default function UndergraduateModuleCatalog() {
           {currentModules.map((module) => (
             <button
               key={module.code}
-              onClick={() => setSelectedModule(module)}
+              ref={(el) => { cardRefs.current[module.code] = el }}
+              onClick={() => handleModuleClick(module, module.code)}
               className="col-span-12 md:col-span-6 lg:col-span-4 text-left bg-[#F5F5F5] p-6 hover:bg-white hover:shadow-xl transition-all border-l-4 group"
               style={{ borderColor: module.color }}
             >
@@ -226,31 +241,39 @@ export default function UndergraduateModuleCatalog() {
       
       {/* Modal */}
       {selectedModule && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50" onClick={() => setSelectedModule(null)}>
+        <div 
+          className="fixed inset-0 bg-black/50 flex items-center justify-center p-2 sm:p-4 z-50 animate-fade-in" 
+          onClick={() => setSelectedModule(null)}
+        >
           <div 
-            className="bg-white max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+            className="bg-white w-full max-w-[95vw] sm:max-w-2xl max-h-[95vh] sm:max-h-[90vh] overflow-y-auto animate-modal-expand"
             onClick={(e) => e.stopPropagation()}
+            style={{
+              transformOrigin: `${clickPosition.x}px ${clickPosition.y}px`,
+              '--click-x': `${clickPosition.x}px`,
+              '--click-y': `${clickPosition.y}px`
+            } as React.CSSProperties}
           >
             {/* Modal Header */}
             <div 
-              className="p-6 text-white"
+              className="p-4 sm:p-6 text-white"
               style={{ backgroundColor: selectedModule.color }}
             >
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <span className="text-sm font-bold opacity-90">{selectedModule.code}</span>
-                  <h3 className="text-2xl font-bold mt-1">{selectedModule.name}</h3>
+              <div className="flex items-start justify-between gap-3 mb-4">
+                <div className="flex-1 min-w-0">
+                  <span className="text-xs sm:text-sm font-bold opacity-90">{selectedModule.code}</span>
+                  <h3 className="text-xl sm:text-2xl font-bold mt-1 leading-tight">{selectedModule.name}</h3>
                 </div>
                 <button
                   onClick={() => setSelectedModule(null)}
-                  className="p-2 hover:bg-white/20 transition-colors"
+                  className="flex-shrink-0 w-11 h-11 flex items-center justify-center hover:bg-white/20 transition-colors rounded-full"
                   aria-label="Close"
                 >
                   <X size={24} />
                 </button>
               </div>
               
-              <div className="flex items-center gap-4 text-sm font-semibold">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-4 text-xs sm:text-sm font-semibold">
                 <span>{selectedModule.credits} credits</span>
                 <span>•</span>
                 <span>{selectedModule.year}</span>
@@ -258,21 +281,21 @@ export default function UndergraduateModuleCatalog() {
             </div>
             
             {/* Modal Body */}
-            <div className="p-6">
+            <div className="p-4 sm:p-6">
               <div className="mb-6">
-                <h4 className="text-sm font-bold text-[#61223B] uppercase tracking-wider mb-3">
+                <h4 className="text-xs sm:text-sm font-bold text-[#61223B] uppercase tracking-wider mb-3">
                   Description
                 </h4>
-                <p className="text-base text-[#4D5356] font-medium leading-relaxed">
+                <p className="text-sm sm:text-base text-[#4D5356] font-medium leading-relaxed">
                   {selectedModule.description}
                 </p>
               </div>
               
-              <div className="bg-[#F5F5F5] p-4">
-                <h4 className="text-sm font-bold text-[#61223B] uppercase tracking-wider mb-2">
+              <div className="bg-[#F5F5F5] p-3 sm:p-4">
+                <h4 className="text-xs sm:text-sm font-bold text-[#61223B] uppercase tracking-wider mb-2">
                   Prerequisites
                 </h4>
-                <p className="text-sm text-[#4D5356] font-medium">
+                <p className="text-xs sm:text-sm text-[#4D5356] font-medium">
                   {selectedModule.prerequisites}
                 </p>
               </div>
@@ -280,6 +303,36 @@ export default function UndergraduateModuleCatalog() {
           </div>
         </div>
       )}
+      
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+
+        @keyframes modalExpand {
+          from {
+            transform: scale(0.3);
+            opacity: 0;
+          }
+          to {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+
+        .animate-fade-in {
+          animation: fadeIn 0.3s ease-out;
+        }
+
+        .animate-modal-expand {
+          animation: modalExpand 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+      `}</style>
     </section>
   )
 }

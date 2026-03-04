@@ -64,15 +64,15 @@ export default function StudyModes() {
   return (
     <section className="bg-[#F5F5F5] py-20 relative overflow-hidden">
       {/* S-graphic background pattern */}
-      <div className="absolute top-0 left-0 h-full opacity-10 pointer-events-none">
+      <div className="absolute top-0 left-0 h-full w-auto max-w-[40%] opacity-10 pointer-events-none">
         <img 
           src="/images/s-graphic/S_Graphic_Grid_A4_RGB-05.svg" 
           alt="" 
-          className="h-full object-cover"
+          className="h-full w-auto object-cover object-left"
         />
       </div>
       
-      <div className="max-w-4xl mx-auto px-6 relative z-10">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
         <div className="mb-12">
@@ -82,10 +82,10 @@ export default function StudyModes() {
               Study options
             </span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
             Study modes & international students
           </h2>
-          <p className="text-lg text-[#4D5356] font-medium leading-relaxed">
+          <p className="text-base sm:text-lg text-[#4D5356] font-medium leading-relaxed">
             We accommodate various study arrangements to suit your circumstances, whether you're working full-time or joining us from abroad.
           </p>
         </div>

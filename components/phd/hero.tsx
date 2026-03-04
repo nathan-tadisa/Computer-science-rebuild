@@ -14,7 +14,7 @@ export default function PhDHero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/su-campus-day.jpg"
+          src="/images/building 2.jpg"
           alt="PhD research"
           className="w-full h-full object-cover"
         />

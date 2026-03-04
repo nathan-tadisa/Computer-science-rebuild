@@ -13,7 +13,7 @@ export default function ProgrammeGuideHero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/su-campus.jpg"
+          src="/images/building 1.jpg"
           alt="Computer Science programmes"
           className="w-full h-full object-cover"
         />

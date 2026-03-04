@@ -4,16 +4,16 @@ export default function Facilities() {
   return (
     <section className="bg-[#61223B] py-20 relative overflow-hidden">
       {/* Decorative S-graphic pattern */}
-      <div className="absolute top-0 right-0 h-full opacity-10 pointer-events-none">
+      <div className="absolute top-0 right-0 h-full w-auto max-w-[40%] opacity-10 pointer-events-none">
         <img 
           src="/images/s-graphic/S_Graphic_Grid_A4_RGB-02.svg" 
           alt="" 
-          className="h-full w-auto object-cover"
+          className="h-full w-auto object-cover object-right"
         />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-12 gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div className="grid grid-cols-12 gap-6 lg:gap-8 items-center">
           
           {/* Left content */}
           <div className="col-span-12 lg:col-span-6 text-white">
@@ -24,11 +24,11 @@ export default function Facilities() {
               </span>
             </div>
             
-            <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
               Key facilities & institutes
             </h2>
             
-            <p className="text-lg text-white/90 mb-8 font-medium leading-relaxed">
+            <p className="text-base sm:text-lg text-white/90 mb-8 font-medium leading-relaxed">
               Stellenbosch University is the proud host of the newly opened headquarters for the National Institute of Theoretical and Computational Sciences (NITheCS). This provides state-of-the-art facilities and global collaborative opportunities for computer science researchers.
             </p>
             
@@ -75,7 +75,7 @@ export default function Facilities() {
           <div className="col-span-12 lg:col-span-6 relative">
             <div className="relative aspect-[4/3] overflow-hidden" style={{ borderBottomRightRadius: '4rem' }}>
               <img
-                src="/images/su-campus.jpg"
+                src="/images/building 2.jpg"
                 alt="NITheCS facilities"
                 className="w-full h-full object-cover"
               />

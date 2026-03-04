@@ -11,7 +11,8 @@ const academicStaff = [
     email: "abvdm@cs.sun.ac.za",
     phone: "+27 21 808 4232",
     interests: "Tree automata and applications, Learning of grammars and languages from data",
-    category: "core"
+    category: "core",
+    image: "/images/staff/abvdm.jpg"
   },
   {
     name: "George Azzopardi",
@@ -19,7 +20,8 @@ const academicStaff = [
     office: "Remote",
     phone: "+27 21 808 4232",
     interests: "Brain-inspired computing, Computer Vision, Pattern Recognition, Machine Learning",
-    category: "extraordinary"
+    category: "extraordinary",
+    image: "/images/staff/gazzopardi.jpg"
   },
   {
     name: "Willem Bester",
@@ -28,14 +30,16 @@ const academicStaff = [
     email: "whkbester@cs.sun.ac.za",
     phone: "+27 21 808 4232",
     interests: "Software Engineering, Formal Methods, Formal Language and Automata Theory",
-    category: "core"
+    category: "core",
+    image: "/images/staff/whkbester.jpg"
   },
   {
     name: "Judith Bishop",
     role: "Professor Extraordinary",
     email: "jbishop@sun.ac.za",
     interests: "Programming languages, software engineering, mobile computing, open source software",
-    category: "extraordinary"
+    category: "extraordinary",
+    image: "/images/staff/jbishop.jpg"
   },
   {
     name: "Loek Cleophas",
@@ -43,7 +47,8 @@ const academicStaff = [
     office: "Remote",
     phone: "+27 21 808 4232",
     interests: "Model-driven engineering, Digital Twins, Algorithm + model variability",
-    category: "extraordinary"
+    category: "extraordinary",
+    image: "/images/staff/lcleophas.jpg"
   },
   {
     name: "Marcel Dunaiski",
@@ -52,7 +57,8 @@ const academicStaff = [
     email: "marceldunaiski@sun.ac.za",
     phone: "+27 21 808 4232",
     interests: "Data Science, Informetrics, Scientometrics",
-    category: "core"
+    category: "core",
+    image: "/images/staff/mdunaiski.jpg"
   },
   {
     name: "David Baker Effendi",
@@ -60,7 +66,8 @@ const academicStaff = [
     office: "Remote",
     phone: "+27 21 808 4232",
     interests: "Program analysis, static analysis",
-    category: "core"
+    category: "core",
+    image: "/images/staff/deffendi.jpg"
   },
   {
     name: "Andries Engelbrecht",
@@ -69,7 +76,8 @@ const academicStaff = [
     email: "engel@sun.ac.za",
     phone: "+27 21 808 9259",
     interests: "Swarm intelligence, Evolutionary computation, Hyper-heuristics, Neural networks, Machine learning",
-    category: "core"
+    category: "core",
+    image: "/images/staff/engel.jpg"
   },
   {
     name: "Bernd Fischer",
@@ -78,7 +86,8 @@ const academicStaff = [
     email: "bfischer@cs.sun.ac.za",
     phone: "+27 21 808 2527",
     interests: "Software engineering, formal methods, program analysis, program generation, program verification, AI",
-    category: "core"
+    category: "core",
+    image: "/images/staff/bfischer.jpg"
   },
   {
     name: "Trienko Grobler",
@@ -87,7 +96,8 @@ const academicStaff = [
     email: "tlgrobler@sun.ac.za",
     phone: "+27 21 808 4232",
     interests: "Machine learning, remote sensing, radio interferometry, coding theory",
-    category: "core"
+    category: "core",
+    image: "/images/staff/tlgrobler.jpg"
   },
   {
     name: "McElory Hoffmann",
@@ -95,7 +105,8 @@ const academicStaff = [
     office: "Remote",
     email: "mcelory@praelexis.co.za",
     interests: "Computer vision, machine learning, smart cameras",
-    category: "extraordinary"
+    category: "extraordinary",
+    image: "/images/staff/mcelory.jpg"
   },
   {
     name: "Cornelia Inggs",
@@ -104,7 +115,8 @@ const academicStaff = [
     email: "cinggs@cs.sun.ac.za",
     phone: "+27 21 808 4232",
     interests: "Formal methods, model checking, concurrency",
-    category: "core"
+    category: "core",
+    image: "/images/staff/cinggs.jpg"
   },
   {
     name: "Maria Keet",
@@ -112,7 +124,8 @@ const academicStaff = [
     office: "Remote",
     phone: "+27 21 808 4232",
     interests: "Ontology, Semantic Web, Conceptual Modeling, Knowledge Representation and reasoning",
-    category: "extraordinary"
+    category: "extraordinary",
+    image: "/images/staff/mkeet.png"
   },
   {
     name: "Steve Kroon",
@@ -121,7 +134,8 @@ const academicStaff = [
     email: "kroon@sun.ac.za",
     phone: "+27 21 808 9375",
     interests: "Artificial intelligence/machine learning, statistical learning theory, probability and computing",
-    category: "core"
+    category: "core",
+    image: "/images/staff/kroon.jpg"
   },
   {
     name: "Mkhuseli Ngxande",
@@ -130,7 +144,8 @@ const academicStaff = [
     email: "ngxandem@sun.ac.za",
     phone: "+27 21 808 4232",
     interests: "Machine learning, computer vision, bioinformatics, wide area surveillance",
-    category: "core"
+    category: "core",
+    image: "/images/staff/ngxandem.jpg"
   },
   {
     name: "Francesco Petruccione",
@@ -139,14 +154,16 @@ const academicStaff = [
     email: "petruccione@sun.ac.za",
     phone: "+27 21 808 4562",
     interests: "Interim director of NITheCS, Quantum Computing",
-    category: "visiting"
+    category: "visiting",
+    image: "/images/staff/petruccione.jpg"
   },
   {
     name: "Laurette Pretorius",
     role: "Associate Professor Extraordinary",
     phone: "+27 21 808 4232",
     interests: "Multilingual NLP, Semantic computing, Ontology development, Machine translation",
-    category: "extraordinary"
+    category: "extraordinary",
+    image: "/images/staff/lpretorius.jpg"
   },
   {
     name: "Moeketsi Raselimo",
@@ -154,7 +171,8 @@ const academicStaff = [
     office: "Remote",
     phone: "+27 21 808 4232",
     interests: "Programming Languages, Software Testing, Fuzzing",
-    category: "extraordinary"
+    category: "extraordinary",
+    image: "/images/staff/mraselimo.jpg"
   },
   {
     name: "Gavin Rens",
@@ -163,7 +181,8 @@ const academicStaff = [
     email: "gavinrens@sun.ac.za",
     phone: "+27 21 808 4232",
     interests: "Cognitive Robotics, knowledge representation and reasoning under uncertainty, Probabilistic planning",
-    category: "core"
+    category: "core",
+    image: "/images/staff/grens.jpg"
   },
   {
     name: "William (Bill) Tucker",
@@ -172,7 +191,8 @@ const academicStaff = [
     email: "btucker@sun.ac.za",
     phone: "+27 21 808 3382",
     interests: "Computer networks and applications; human computer interaction; social impact; ethical computing",
-    category: "core"
+    category: "core",
+    image: "/images/staff/btucker.jpg"
   },
   {
     name: "Lynette van Zijl",
@@ -181,7 +201,8 @@ const academicStaff = [
     email: "lvzijl@sun.ac.za",
     phone: "+27 21 808 4232",
     interests: "Implementation and applications of automata; assistive technologies",
-    category: "core"
+    category: "core",
+    image: "/images/staff/lvzijl.jpg"
   },
   {
     name: "Wolf-Tilo Balke and Florian Plötzky",
@@ -189,7 +210,8 @@ const academicStaff = [
     email: "balke@ifis.cs.tu-bs.de",
     phone: "+27 21 808 4232",
     interests: "Query Processing, User Preferences and Personalization, Cognitive User Modeling",
-    category: "visiting"
+    category: "visiting",
+    image: "/images/staff/tbalke.jpg"
   },
   {
     name: "Willem Visser",
@@ -198,14 +220,16 @@ const academicStaff = [
     email: "visserw@sun.ac.za",
     phone: "+27 21 808 4232",
     interests: "Software engineering, testing, symbolic execution, and model checking",
-    category: "core"
+    category: "core",
+    image: "/images/staff/visserw.jpg"
   },
   {
     name: "Fabian Yamaguchi",
     role: "Professor Extraordinary",
     email: "fabs@shiftleft.io",
     interests: "Computer security, Program analysis, Machine learning",
-    category: "extraordinary"
+    category: "extraordinary",
+    image: "/images/staff/fabian3.jpg"
   }
 ]
 
@@ -219,22 +243,22 @@ export default function AcademicStaff() {
   return (
     <section className="bg-[#F5F5F5] py-20 relative overflow-hidden">
       {/* S-graphic background pattern */}
-      <div className="absolute bottom-0 left-0 h-full opacity-10 pointer-events-none">
+      <div className="absolute bottom-0 left-0 h-full w-auto max-w-[40%] opacity-10 pointer-events-none">
         <img 
           src="/images/s-graphic/S_Graphic_Grid_A4_RGB-03.svg" 
           alt="" 
-          className="h-full w-auto object-cover"
+          className="h-full w-auto object-cover object-left"
         />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
             Academic staff
           </h2>
-          <p className="text-lg text-[#4D5356] font-medium max-w-3xl mx-auto mb-8">
+          <p className="text-base sm:text-lg text-[#4D5356] font-medium max-w-3xl mx-auto mb-8">
             Our academic team brings together world-class researchers and educators dedicated to excellence in teaching and research.
           </p>
           
@@ -286,9 +310,12 @@ export default function AcademicStaff() {
                 style={{ borderBottomRightRadius: '2rem' }}
               >
                 <img
-                  src="/placeholder-user.jpg"
+                  src={staff.image}
                   alt={staff.name}
                   className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = '/placeholder-user.jpg'
+                  }}
                 />
               </div>
               

@@ -14,7 +14,7 @@ export default function ModulesHero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/su-campus.jpg"
+          src="/images/building 2.jpg"
           alt="Postgraduate studies"
           className="w-full h-full object-cover"
         />

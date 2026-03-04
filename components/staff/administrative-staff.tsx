@@ -31,15 +31,15 @@ export default function AdministrativeStaff() {
       <div className="absolute inset-0 bg-[#CAA258] opacity-5" />
       
       {/* S-graphic background pattern */}
-      <div className="absolute top-0 right-0 h-full opacity-10 pointer-events-none">
+      <div className="absolute top-0 right-0 h-full w-auto max-w-[40%] opacity-10 pointer-events-none">
         <img 
           src="/images/s-graphic/S_Graphic_Grid_A4_RGB-05.svg" 
           alt="" 
-          className="h-full w-auto object-cover"
+          className="h-full w-auto object-cover object-right"
         />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
         <div className="text-center mb-12">
@@ -50,10 +50,10 @@ export default function AdministrativeStaff() {
             </span>
             <div className="w-12 h-0.5 bg-[#CAA258]" />
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#61223B] mb-6">
             Administrative staff
           </h2>
-          <p className="text-lg text-[#4D5356] font-medium max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg text-[#4D5356] font-medium max-w-3xl mx-auto">
             Our dedicated administrative team ensures smooth operations and provides essential support to students, staff, and visitors.
           </p>
         </div>
