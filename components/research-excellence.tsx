@@ -30,7 +30,7 @@ const researchAreas = [
 
 export default function ResearchExcellence() {
   return (
-    <section className="bg-white py-20 relative overflow-hidden">
+    <section className="bg-white py-12 sm:py-16 lg:py-20 relative overflow-hidden">
       {/* S-graphic background pattern */}
       <div className="absolute top-0 left-0 h-full opacity-10 pointer-events-none">
         <img 
@@ -40,10 +40,10 @@ export default function ResearchExcellence() {
         />
       </div>
       
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         
         {/* Header */}
-        <div className="grid grid-cols-12 gap-12 mb-16">
+        <div className="grid grid-cols-12 gap-6 lg:gap-12 mb-16">
           <div className="col-span-12 lg:col-span-7">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-12 h-0.5 bg-[#D22730]" />
@@ -51,12 +51,10 @@ export default function ResearchExcellence() {
                 Research excellence
               </span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#61223B] mb-6 leading-tight">
-              Pioneering research
-              <br />
-              that shapes the future
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#61223B] mb-6 leading-tight break-words">
+              Pioneering research that shapes the future
             </h2>
-            <p className="text-lg text-[#4D5356] font-medium leading-relaxed">
+            <p className="text-base sm:text-lg text-[#4D5356] font-medium leading-relaxed">
               Our research groups tackle some of the most pressing challenges in computer science, from artificial intelligence to cybersecurity. We collaborate with leading international institutions and industry partners to drive innovation.
             </p>
           </div>

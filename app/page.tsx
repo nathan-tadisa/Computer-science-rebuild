@@ -6,6 +6,7 @@ import NewsEvents          from "@/components/news-events"
 import AcademicProgrammes  from "@/components/academic-programmes"
 import ResearchExcellence  from "@/components/research-excellence"
 import StudentSupport      from "@/components/student-support"
+import PongGame            from "@/components/pong-game"
 import Footer              from "@/components/footer"
 
 export default function HomePage() {
@@ -19,6 +20,7 @@ export default function HomePage() {
       <AcademicProgrammes />
       <ResearchExcellence />
       <StudentSupport />
+      <PongGame />
       <Footer />
     </main>
   )
