@@ -10,8 +10,8 @@ export default function HeroSection() {
       {/* Full-bleed daytime campus photo */}
       <div className="absolute inset-0 overflow-hidden">
         <Image
-          src="/images/su-campus-day.jpg"
-          alt="Stellenbosch University campus"
+          src="/images/building 1.jpg"
+          alt="Stellenbosch University Computer Science building"
           fill
           priority
           className="object-cover object-center"

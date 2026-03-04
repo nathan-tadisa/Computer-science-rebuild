@@ -58,11 +58,11 @@ export default function NewsSection() {
   const visible = news.slice(start, start + VISIBLE)
 
   return (
-    <section id="news" className="bg-white py-24 border-t border-[#E2E2E2]">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="news" className="bg-white py-16 sm:py-24 border-t border-[#E2E2E2]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Header row */}
-        <div className="grid grid-cols-12 gap-6 mb-12">
+        <div className="grid grid-cols-12 gap-6 mb-8 sm:mb-12">
           <div className="col-span-12 lg:col-span-8">
             <div className="flex items-center gap-2 mb-3">
               <div className="w-8 h-0.5 bg-[#D22730]" aria-hidden="true" />
@@ -108,12 +108,12 @@ export default function NewsSection() {
             <Link
               key={item.title}
               href={item.href}
-              className="col-span-12 md:col-span-6 lg:col-span-4 group flex flex-col bg-white border border-[#E2E2E2] hover:border-[#D22730] hover:shadow-md transition-all overflow-hidden"
+              className="col-span-12 md:col-span-6 lg:col-span-4 group flex flex-col bg-white border border-[#E2E2E2] hover:border-[#D22730] hover:shadow-xl transition-all duration-300 overflow-hidden hover:scale-105 hover:z-10"
             >
               {/* Science Red top accent bar */}
               <div className="h-1 bg-[#D22730] w-full flex-shrink-0" />
 
-              <div className="flex flex-col flex-1 p-6">
+              <div className="flex flex-col h-full p-6">
                 {/* Meta row */}
                 <div className="flex items-center gap-3 mb-4">
                   <span className="flex items-center gap-1.5 text-[10px] font-bold text-[#61223B] uppercase tracking-wider">
@@ -128,12 +128,12 @@ export default function NewsSection() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-semibold text-[#2D2D2D] leading-snug mb-3 group-hover:text-[#61223B] transition-colors text-balance">
+                <h3 className="font-semibold text-[#2D2D2D] leading-snug mb-3 group-hover:text-[#61223B] transition-colors text-balance line-clamp-3">
                   {item.title}
                 </h3>
 
                 {/* Excerpt */}
-                <p className="text-sm text-[#4D5356] leading-relaxed flex-1 font-medium">
+                <p className="text-sm text-[#4D5356] leading-relaxed flex-1 font-medium line-clamp-4">
                   {item.excerpt}
                 </p>
 

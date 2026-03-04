@@ -10,8 +10,8 @@ const stats = [
 export default function StatsBar() {
   return (
     <section className="bg-white border-y border-[#E2E2E2]">
-      <div className="max-w-7xl mx-auto px-6 py-10">
-        <div className="grid grid-cols-12 gap-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+        <div className="grid grid-cols-12 gap-4 sm:gap-6">
           {stats.map(({ icon: Icon, value, label }) => (
             <div key={label} className="col-span-6 lg:col-span-3 flex items-center gap-4">
               {/* Science Red-accented icon badge */}

@@ -1,0 +1,100 @@
+/* Dropdown Menu Component Styles */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownButton {
+  /* Base button styles - can be overridden with buttonClassName prop */
+  cursor: pointer;
+  user-select: none;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+  border-radius: 0.5rem;
+  z-index: 1000;
+  margin-top: 0.25rem;
+  border: 1px solid #E2E2E2;
+}
+
+/* Navbar-specific styling */
+.dropdownContent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #D22730;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* Open state for mobile/touch devices */
+.dropdownContent.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Hover state for desktop */
+.dropdown:hover .dropdownContent {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdownItem {
+  color: #2D2D2D;
+  padding: 0.625rem 1rem;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.dropdownItem:hover {
+  background: #F5F5F5;
+  color: #61223B;
+}
+
+.dropdownItem:first-child {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.dropdownItem:last-child {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+/* Focus styles for accessibility */
+.dropdownButton:focus {
+  outline: 2px solid #61223B;
+  outline-offset: 2px;
+}
+
+.dropdownItem:focus {
+  outline: 2px solid #61223B;
+  outline-offset: -2px;
+  background: #f3f4f6;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .dropdownContent {
+    min-width: 200px;
+  }
+}

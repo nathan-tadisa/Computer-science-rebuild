@@ -6,8 +6,8 @@ import { ArrowRight } from "lucide-react"
 export default function HeroBanner() {
   return (
     <section className="relative bg-[#61223B] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 py-20 lg:py-32">
-        <div className="grid grid-cols-12 gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20 lg:py-32">
+        <div className="grid grid-cols-12 gap-6 lg:gap-8 items-center">
           
           {/* Left content */}
           <div className="col-span-12 lg:col-span-6 text-white z-10">
@@ -18,7 +18,7 @@ export default function HeroBanner() {
               </span>
             </div>
             
-            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
               STELLENBOSCH
               <br />
               UNIVERSITY
@@ -28,7 +28,7 @@ export default function HeroBanner() {
               LEADERSHIP
             </h1>
             
-            <p className="text-lg text-white/80 mb-8 max-w-md font-medium">
+            <p className="text-base sm:text-lg text-white/80 mb-8 max-w-md font-medium">
               Your gateway to a world of higher education
             </p>
             
@@ -45,7 +45,7 @@ export default function HeroBanner() {
           <div className="col-span-12 lg:col-span-6 relative">
             <div className="relative aspect-[4/5] lg:aspect-square">
               <img
-                src="/images/su-campus-day.jpg"
+                src="/images/ScienceClassMaths-13.jpg"
                 alt="Student studying"
                 className="w-full h-full object-cover"
               />

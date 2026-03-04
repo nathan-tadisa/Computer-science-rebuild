@@ -38,6 +38,8 @@ const newsItems = [
 ]
 
 export default function NewsEvents() {
+  const [hoveredId, setHoveredId] = useState<number | null>(null)
+
   return (
     <section className="bg-[#F5F5F5] py-20 relative overflow-hidden">
       {/* S-graphic background pattern */}
@@ -81,28 +83,34 @@ export default function NewsEvents() {
         </div>
         
         {/* News Grid */}
-        <div className="grid grid-cols-12 gap-6">
-          {newsItems.map((item, index) => {
+        <div className="flex gap-6 flex-wrap lg:flex-nowrap">
+          {newsItems.map((item) => {
             const Icon = item.icon
+            const isHovered = hoveredId === item.id
+            const isOtherHovered = hoveredId !== null && hoveredId !== item.id
+            
             return (
               <Link
                 key={item.id}
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group ${
-                  index === 0 
-                    ? 'col-span-12 lg:col-span-6' 
-                    : 'col-span-12 md:col-span-6 lg:col-span-3'
-                }`}
+                onMouseEnter={() => setHoveredId(item.id)}
+                onMouseLeave={() => setHoveredId(null)}
+                style={{
+                  flex: isHovered ? '1.5' : isOtherHovered ? '0.75' : '1',
+                  transition: 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
+                  minWidth: isOtherHovered ? '250px' : '300px'
+                }}
+                className="group w-full lg:w-auto"
               >
-                <div className="bg-white p-6 h-full hover:shadow-lg transition-all border-l-4 border-[#D22730]">
+                <div className="bg-white p-6 h-full flex flex-col hover:shadow-2xl transition-shadow duration-500 border-l-4 border-[#D22730]">
                   {/* Icon & Category */}
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 bg-[#D22730] flex items-center justify-center">
+                    <div className="w-10 h-10 bg-[#D22730] flex items-center justify-center flex-shrink-0">
                       <Icon size={18} className="text-white" />
                     </div>
-                    <div className="flex-1">
+                    <div className="flex-1 min-w-0">
                       <p className="text-xs font-bold tracking-wider uppercase text-[#D22730]">
                         {item.category}
                       </p>
@@ -114,17 +122,29 @@ export default function NewsEvents() {
                   </div>
                   
                   {/* Content */}
-                  <h3 className={`font-bold text-[#2D2D2D] group-hover:text-[#61223B] transition-colors mb-3 ${
-                    index === 0 ? 'text-xl' : 'text-base'
-                  }`}>
+                  <h3 
+                    className="font-bold text-[#2D2D2D] group-hover:text-[#61223B] mb-3"
+                    style={{
+                      fontSize: isHovered ? '1.25rem' : '1rem',
+                      transition: 'font-size 0.6s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease'
+                    }}
+                  >
                     {item.title}
                   </h3>
                   
-                  <p className="text-sm text-[#4D5356] font-medium leading-relaxed mb-4">
+                  <p 
+                    className="text-sm text-[#4D5356] font-medium leading-relaxed mb-4 flex-1 overflow-hidden"
+                    style={{
+                      display: '-webkit-box',
+                      WebkitLineClamp: isHovered ? 6 : 4,
+                      WebkitBoxOrient: 'vertical',
+                      transition: 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)'
+                    }}
+                  >
                     {item.excerpt}
                   </p>
                   
-                  <div className="flex items-center gap-1 text-xs text-[#D22730] font-bold group-hover:gap-2 transition-all">
+                  <div className="flex items-center gap-1 text-xs text-[#D22730] font-bold group-hover:gap-2 transition-all mt-auto">
                     Read more
                     <ArrowRight size={12} className="transition-transform group-hover:translate-x-1" />
                   </div>

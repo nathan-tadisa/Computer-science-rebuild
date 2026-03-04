@@ -9,7 +9,7 @@ const stories = [
     category: "University",
     title: "Where knowledge meets opportunity",
     description: "Our commitment to education extends beyond graduation",
-    image: "/images/su-campus-day.jpg",
+    image: "/images/building 1.jpg",
     tag: "Read story"
   },
   {
@@ -17,7 +17,7 @@ const stories = [
     category: "Lifestyle",
     title: "Embrace the journey of lifelong learning with our e-learning",
     description: "Flexible learning options for working professionals",
-    image: "/images/su-campus.jpg",
+    image: "/images/ScienceClassMaths-13.jpg",
     tag: "Read story"
   },
   {
@@ -25,7 +25,7 @@ const stories = [
     category: "Education",
     title: "Our commitment to education extends beyond graduation",
     description: "Supporting students throughout their academic journey",
-    image: "/images/su-campus-day.jpg",
+    image: "/images/building 2.jpg",
     tag: "Read story"
   }
 ]
@@ -37,11 +37,11 @@ export default function StoryCards() {
   const prev = () => setCurrentIndex((prev) => (prev - 1 + stories.length) % stories.length)
   
   return (
-    <section className="bg-white py-16">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-white py-12 sm:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Header */}
-        <div className="grid grid-cols-12 gap-6 mb-12">
+        <div className="grid grid-cols-12 gap-6 mb-8 sm:mb-12">
           <div className="col-span-12 lg:col-span-6">
             <div className="flex items-center gap-2 mb-4">
               <span className="text-xs font-bold tracking-widest uppercase text-[#61223B]">
@@ -52,7 +52,7 @@ export default function StoryCards() {
                 02 03 04 05
               </span>
             </div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#2D2D2D] mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2D2D2D] mb-4">
               Where knowledge meets opportunity
             </h2>
           </div>

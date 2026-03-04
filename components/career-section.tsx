@@ -17,7 +17,7 @@ export default function CareerSection() {
           <div className="col-span-12 lg:col-span-6">
             <div className="relative aspect-[4/3] overflow-hidden">
               <img
-                src="/images/su-campus.jpg"
+                src="/images/building 1.jpg"
                 alt="Professional career"
                 className="w-full h-full object-cover"
               />

@@ -45,18 +45,15 @@ export default function Footer() {
       <div className="h-1 bg-[#D22730]" aria-hidden="true" />
 
       {/* Main footer body */}
-      <div className="max-w-7xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-12 gap-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <div className="grid grid-cols-12 gap-6 sm:gap-10">
 
           {/* Brand + contact column (spans 4 of 12 on xl) */}
           <div className="col-span-12 md:col-span-6 xl:col-span-4">
             {/* Full brand signature with logo */}
             <Link href="/" className="flex items-center gap-3 mb-4" aria-label="SU Computer Science home">
-              <div className="w-12 h-12 flex items-center justify-center border-2 border-[#CAA258]" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2L3 6.5v6C3 17.3 7 21.5 12 23c5-1.5 9-5.7 9-10.5v-6L12 2z" stroke="#CAA258" strokeWidth="1.4" fill="none" />
-                  <text x="12" y="16" textAnchor="middle" fontSize="8.5" fontWeight="700" fill="#CAA258" fontFamily="Georgia,serif">SU</text>
-                </svg>
+              <div className="w-12 h-12 flex items-center justify-center" aria-hidden="true">
+                <img src="/logo.svg" alt="SU Logo" className="w-full h-full" />
               </div>
               <div>
                 <p className="text-white font-bold text-base leading-tight">Stellenbosch University</p>
@@ -122,7 +119,7 @@ export default function Footer() {
         </div>
 
         {/* Enquiry shortcut cards */}
-        <div className="mt-14 grid grid-cols-12 gap-3">
+        <div className="mt-10 sm:mt-14 grid grid-cols-12 gap-3">
           {[
             { label: "General enquiries", email: "secretary@cs.sun.ac.za" },
             { label: "Postgraduate enquiries", email: "postgrad@cs.sun.ac.za" },
@@ -166,7 +163,7 @@ export default function Footer() {
 
       {/* Bottom bar with university links */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-5 grid grid-cols-12 gap-3 items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-5 grid grid-cols-12 gap-3 items-center">
           <p className="col-span-12 lg:col-span-6 text-xs text-white/45 font-medium text-center lg:text-left">
             &copy; {new Date().getFullYear()} Stellenbosch University. All rights reserved.
           </p>

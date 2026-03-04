@@ -1,48 +1,35 @@
-import Link from "next/link"
-import { Users, BookOpen, Heart, Briefcase, MessageCircle, Award } from "lucide-react"
+import { Users, BookOpen, Heart, Briefcase, Code, Laptop, Award } from "lucide-react"
 
 const supportServices = [
   {
     icon: Users,
-    title: "Computer Science Society",
-    description: "Join our vibrant student community for tech talks, workshops, and social events.",
-    link: "#",
-    linkText: "Join the society"
+    title: "Acorns and Oaks Mentorship Programme",
+    description: "Transitioning to university can be daunting, but you don't have to do it alone. Through the Acorns and Oaks programme, newcomers are paired with experienced senior students who provide guidance, academic advice, and a welcoming introduction to campus life."
   },
   {
-    icon: BookOpen,
-    title: "Academic support",
-    description: "Access tutoring, study groups, and mentorship programmes to excel in your studies.",
-    link: "#",
-    linkText: "Get support"
+    icon: Code,
+    title: "SUDS & The AI Society",
+    description: "Connect with like-minded peers by joining our active student-run groups. Whether you want to build collaborative projects with the SU Developer Society (SUDS) or explore the future of tech with the newly established AI Society, you will find a space to learn, network, and grow outside the classroom."
   },
   {
-    icon: Heart,
-    title: "Mentorship programme",
-    description: "Connect with senior students and alumni who guide you through your academic journey.",
-    link: "#",
-    linkText: "Find a mentor"
-  },
-  {
-    icon: Briefcase,
-    title: "Career services",
-    description: "Prepare for your future with CV workshops, interview prep, and industry connections.",
-    link: "#",
-    linkText: "Explore careers"
-  },
-  {
-    icon: MessageCircle,
-    title: "Peer learning",
-    description: "Collaborate with fellow students through study groups and project teams.",
-    link: "#",
-    linkText: "Join a group"
+    icon: Laptop,
+    title: "The NARGA Computer Labs",
+    description: "Our dedicated Science Faculty computer labs (NARGA) are more than just a place to study; they are the physical hub of our community. This is where study groups naturally form, late-night debugging sessions happen, and lifelong friendships are built."
   },
   {
     icon: Award,
-    title: "Competitions & hackathons",
-    description: "Participate in coding competitions, hackathons, and innovation challenges.",
-    link: "#",
-    linkText: "View events"
+    title: "Departmental Hackathons",
+    description: "Participate in coding competitions, hackathons, and innovation challenges that push your skills to the next level and connect you with industry partners."
+  },
+  {
+    icon: BookOpen,
+    title: "Academic Support (TAs & Tutors)",
+    description: "Access tutoring, study groups, and teaching assistants who provide personalised support to help you excel in your studies and master challenging concepts."
+  },
+  {
+    icon: Briefcase,
+    title: "Career Services",
+    description: "Prepare for your future with CV workshops, interview preparation, and industry connections that open doors to exciting career opportunities in technology."
   }
 ]
 
@@ -99,20 +86,9 @@ export default function StudentSupport() {
                     {service.title}
                   </h3>
                   
-                  <p className="text-sm text-[#4D5356] font-medium leading-relaxed mb-4">
+                  <p className="text-sm text-[#4D5356] font-medium leading-relaxed">
                     {service.description}
                   </p>
-                  
-                  {/* Link */}
-                  <Link
-                    href={service.link}
-                    className="inline-flex items-center gap-2 text-sm font-bold text-[#D22730] hover:text-[#B01F28] transition-colors"
-                  >
-                    {service.linkText}
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
                 </div>
               </div>
             )
