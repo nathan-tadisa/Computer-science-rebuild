@@ -1,13 +1,7 @@
 import type { Metadata } from 'next'
-import { Raleway, JetBrains_Mono } from 'next/font/google'
+import { JetBrains_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
-
-const raleway = Raleway({
-  subsets: ['latin'],
-  variable: '--font-raleway',
-  weight: ['400', '500', '600', '700', '800'],
-})
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
@@ -21,12 +15,8 @@ export const metadata: Metadata = {
   generator: 'v0.app',
   themeColor: '#61223B',
   icons: {
-    icon: [
-      { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
-      { url: '/icon-dark-32x32.png',  media: '(prefers-color-scheme: dark)'  },
-      { url: '/icon.svg', type: 'image/svg+xml' },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/logo.svg',
+    apple: '/logo.svg',
   },
 }
 
@@ -35,7 +25,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-ZA">
-      <body className={`${raleway.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
+      <body className={`${jetbrainsMono.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
